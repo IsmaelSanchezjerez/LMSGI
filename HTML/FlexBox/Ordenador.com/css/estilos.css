@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+
+
 header {
     display: flex;
     justify-content: flex-start;
@@ -39,7 +41,7 @@ header nav {
 
 header nav a {
     font-family: 'Syne Mono';
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -68,6 +70,45 @@ main section {
     height: 80%;
     background-color: hotpink;
 }
+
+main section article img {
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 main aside {
     width: 20%;
