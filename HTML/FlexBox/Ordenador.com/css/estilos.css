@@ -70,10 +70,58 @@ main section {
     height: 80%;
     background-color: hotpink;
 }
-
-main section article img {
-    height: 200px;
+main section article{
+    display: flex;
+    flex-flow: row nowrap;
+    border: 2px solid black;
 }
+main section article figure{
+    flex-basis: 20%;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section article img {
+    width: 90%;
+}
+
+main section article div.datos{
+    flex-basis: 60%;
+    background-color: none;
+}
+main section article div.datos h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Big Shoulders Stencil Text';
+}
+
+main section article div.datos p{
+    text-align: justify;
+    text-indent: 20px;
+    font-family: 'Open Sans Condensed';
+}
+
+main section article div.compra{
+    flex-basis: 20%;
+    background-color: gold;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main section article div.compra span{
+    font-size: 30px;
+    font-weight: bolder;
+}
+main section article div.compra i{
+    font-size: xx-large;
+}
+
+
+
+
+
 
 
 
