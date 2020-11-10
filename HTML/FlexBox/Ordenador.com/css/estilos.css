@@ -11,14 +11,14 @@ header {
     justify-content: flex-start;
     flex-direction: row;
     height: 150px;
-    background-color: rebeccapurple;
+    background-color: none;
     align-items: center;
 }
 
 header figure {
     height: 90%;
     width: 20%;
-    background-color: rosybrown;
+    background-color: none;
 }
 
 header figure img {
@@ -28,13 +28,13 @@ header figure img {
 header h1 {
     display: flex; flex-flow: column nowrap; justify-content: center;
     width: 50%;
-    background-color: seagreen;
+    background-color: none;
     height: 45%;
 }
 
 header nav {
     display: flex; flex-flow: row nowrap; justify-content: space-around; align-items: center;
-    background-color: whitesmoke;
+    background-color: none;
     width: 32%;
     height: 30%;
 }
@@ -46,14 +46,14 @@ header nav a {
 }
 
 main {
-    height: 500px;
-    background-color: grey;
+    min-height: 500px;
+    background-color: none;
     display: flex; flex-flow: row nowrap;
 }
 
 main nav {
     width: 15%;
-    background-color: yellow;
+    background-color: none;
     height: 40%;
     display: flex; flex-flow: column nowrap; justify-content: space-around; align-items: center;
 
@@ -62,18 +62,18 @@ main nav {
 main nav a {
     height: 30px;
     width: 95%;
-    background-color: gainsboro;
+    background-color: none;
 }
 
 main section {
     width: 65%;
     height: 80%;
-    background-color: hotpink;
+    background-color: none;
 }
 main section article{
     display: flex;
     flex-flow: row nowrap;
-    border: 2px solid black;
+    border: 0px solid black;
 }
 main section article figure{
     flex-basis: 20%;
@@ -104,15 +104,23 @@ main section article div.datos p{
 
 main section article div.compra{
     flex-basis: 20%;
-    background-color: gold;
+    background-color: none;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
+main section article div.compra i:hover{
+    color:  gold;
+}
+main section article div.compra:hover span{
+    color:  blue;
+}
+
 main section article div.compra span{
     font-size: 30px;
     font-weight: bolder;
+    padding-bottom: 20px;
 }
 main section article div.compra i{
     font-size: xx-large;
@@ -160,18 +168,47 @@ main section article div.compra i{
 
 main aside {
     width: 20%;
-    height: 90%;
-    background-color: khaki;
-    display: flex; flex-flow: column nowrap; justify-content: space-around; align-items: center;
+    height: 100%;
+
+    background-color: none;
+    display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center;
 }
+
+main aside img {
+    height: 100px;
+}
+main aside div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+main aside h4 {
+    background-color: grey;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+}
+main aside h3 {
+    text-align: center;
+}
+
+
+
 
 main aside #vistos {
     height: 40%;
     width: 95%;
-    background-color: orange;
+    background-color: none;
 }
+
+
 main aside #valorado {
     height: 40%;
     width: 95%;
-    background-color:green;
+    background-color:none;
 }
