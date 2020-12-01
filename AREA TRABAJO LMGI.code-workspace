@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "LMSGI"
+		},
+		{
+			"path": "projecto"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projecto"
+	}
+}
