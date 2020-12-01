@@ -28,7 +28,7 @@ header i{
 }
 
 main section.first{
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(92, 92, 92);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around ;
@@ -96,7 +96,6 @@ main section.novedades h3{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-
 }
 
 main section.novedades article{
