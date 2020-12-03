@@ -55,3 +55,12 @@ main div figure img {
 main section {
     margin: 60px;
 }
+main section h1 {
+    color: rgb(0, 172, 0);
+}
+main section p {
+    margin: 5px;
+}
+main section article {
+    margin: 10px;
+}
