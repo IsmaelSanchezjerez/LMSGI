@@ -1,0 +1,65 @@
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+header{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    flex-direction: row;
+
+}
+
+header h1{
+    color: rgb(9, 148, 9);
+    width: 65%;
+    display: flex;
+}
+
+header nav{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: flex-start;
+   justify-content: end;
+}
+header nav a{
+    text-decoration: none;
+    display: block;
+    color: rgb(9, 148, 9);
+    
+}
+main section figure img{
+    height: 200px;
+    width: 150px;
+}
+main section h2 {
+    background-color: gray;
+    color: white;
+    display: flex;
+}
+main section h1 {
+    background-color: grey;
+    color: rgb(9, 148, 9);
+    display: flex;
+}
+main section p {
+    background-color: grey;
+    color: white;
+}
+.lol {
+    background-color: white;
+    color: rgb(9, 148, 9);
+}
+.po{
+    color: rgb(9, 148, 9);
+}
+.letra{
+    background-color: white;
+    color: black;
+}
+.pri{
+    background-color: white;
+}
