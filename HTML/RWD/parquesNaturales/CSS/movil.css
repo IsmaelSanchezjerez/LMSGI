@@ -1,0 +1,67 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: 0%;
+}
+
+header{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    }
+
+header h1 {
+    width: 80%;
+    color: green;
+
+}
+header nav {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+header nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color: green;
+}
+
+main{
+    height: 1000px;
+}
+
+main section.uno {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: grey;
+}
+
+main section.uno h2 {
+    height: 10%;
+   
+}
+main section.uno h3 {
+    height: ;
+
+}
+main section.uno  p {
+}
+main section.uno figure {
+    height: 20%;
+
+
+}
+main section.dos {
+    height: 50%;
+}
+main section.dos h1 {
+    height: 30%;
+}
