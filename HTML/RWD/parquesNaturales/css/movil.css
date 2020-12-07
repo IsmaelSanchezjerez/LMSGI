@@ -33,7 +33,7 @@ main section.first{
     flex-flow: row wrap;
     justify-content: space-around ;
     width: 100%;
-    min-height: 400px;
+    height: auto;
 }
 
 main section.first div{
@@ -78,7 +78,10 @@ main section.first figure{
 
 main section.first img{
     width: 25%;
-    min-height: 75px;
+}
+
+main section.first img:last-child{
+    display: none;
 }
 
 main section.novedades{

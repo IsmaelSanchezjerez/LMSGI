@@ -9,3 +9,7 @@ main section.first figure{
 main section.first figure img{
     width: 33.3%;
 }
+
+main section.first img:last-child{
+    display: block !important;
+}
