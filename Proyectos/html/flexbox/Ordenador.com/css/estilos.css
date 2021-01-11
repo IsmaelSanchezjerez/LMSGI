@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(51, 51, 51);
+}
+
+header figure{
+    background-color: none;
+    height: 90%;
+    width: 20%;
+}
+
+header figure img {
+    height: 100%;
+}
+
+header h1{
+    width: 45%;
+    height: 90%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 90%;
+    background-color: none;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 1000px;
+    background-color: rgb(87, 85, 85);
+}
+
+main nav {
+    width: 15%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(148, 158, 160);
+    margin-top: 10%;
+}
+
+main nav a {
+    height: 30px;
+    width: 90%;
+}
+
+main article{
+    background-color: none;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main article section{
+    background-color:none;
+    height: 23%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+
+
+main article section div.datos{
+    width: 45%;
+}
+
+main article section div.datos h2{
+    text-align: center;
+    font-family: "Xanh Mono";
+}
+
+main article section div.datos p{
+    text-align: justify;
+}
+
+main article section div.compra{
+    flex-basis: 20%;
+    display: flex;
+    flex-flow:column nowrap ;
+    justify-content: center;
+    align-items: center;
+}
+
+main article section div.compra span{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: "Open Sans";
+    padding-bottom: 20px;
+}
+
+main article section div.compra i{
+    font-size: xx-large;
+}
+
+main article section div.compra i:hover{
+    color:gold
+}
+
+main article section div.compra:hover span{
+    color: greenyellow;
+}
+
+
+main article section figure {
+    width: 30%;
+}
+
+main article section figure img {
+    width: 90%;
+    height: 90%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+main aside {
+    width: 20%;
+    height: 100%;
+
+    background-color: none;
+    display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: center;
+}
+
+main aside div {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        border: 3px solid grey;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 10px;;
+}
+
+main aside h4 {
+    text-align: center;
+}
+main aside h3 {
+    background-color: grey;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+main aside #vendidos {
+    height: 40%;
+    width: 95%;
+    background-color: none;
+}
+
+
+main aside #oferta {
+    height: 40%;
+    width: 95%;
+    background-color:none;
+}
+
+
+
+footer {
+    background-color: gray;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+footer article#h1 {
+    background-color: rgb(61, 61, 61);
+    width: 70%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer article#h2 {
+    background-color: none;
+    width: 20%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+}
+
+footer article section {
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 90%;
+    margin-top: 10px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 90%;
+}
+
+footer article nav#rs {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer article nav#rs i{
+    font-size: 50px;
+    color: black;
+}
+
+footer article nav#rs i:hover{
+    color: rgb(255, 238, 238);
+}
