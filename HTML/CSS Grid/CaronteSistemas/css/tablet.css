@@ -1,0 +1,106 @@
+#container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: .3fr 1fr;
+    grid-template-areas: 
+    "Cabecera"
+    "Cuerpo";
+}
+
+#container > header  {
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 3fr 1fr;
+    width: 100%;
+    grid-template-areas: 
+    "contactos contactos contactos contactos"
+    "navSociales navSociales navSociales navSociales"
+    "logo logo titulo titulo"
+    "mprincipal mprincipal mprincipal mprincipal";
+}
+
+#navicon{
+    display: none;
+}
+
+#sociales a{
+    border: 0px;
+}
+#logo{
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+h1{
+    text-align: flex-start;
+    align-items: center;
+}
+
+#principal{
+    grid-area: mprincipal;
+    display: grid;
+    grid-template-columns: repeat(6,0.2fr);
+    grid-template-rows: 1fr;
+    padding-left: 10px;
+    background-color: black;
+
+}
+#principal i{
+    color: green;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 2.5px;
+}
+#principal a{
+    text-decoration: none;
+    color: white;
+    border: 0px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#contactos{
+    display: block;
+    padding: 15px;
+}
+
+#principal i{
+    display: block;
+}
+
+main header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main header h2{
+    width: 70%;
+}
+
+#breadCrumb {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#container main section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container main article {
+    margin-left: 3%;
+    display: grid;
+    width: 45%;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "imagen"
+    "datos";
+}
+
+#container main article img{
+    padding: 5px;
+    justify-self: center;
+}

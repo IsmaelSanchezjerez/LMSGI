@@ -1,0 +1,50 @@
+#container > header  {
+    grid-area: Cabecera;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-row: .2fr 3fr .5fr;
+    width: 100%;
+    grid-template-areas: 
+    "contactos contactos contactos navSociales"
+    "logo mprincipal mprincipal mprincipal"
+    "titulo mprincipal mprincipal mprincipal";
+}
+
+#sociales{
+    padding: 15px;
+}
+
+h1{
+    font-size: 20px;
+    align-items: flex-start;
+    justify-content: start;
+    padding-left: 75px;
+}
+
+#logo {
+    justify-content: start;
+    padding-left: 100px;
+}
+
+#principal {
+    justify-content: start;
+    align-items: center;
+}
+
+#principal i{
+    font-size: 45px;
+}
+
+#principal span{
+    font-size: 17px;
+}
+
+#container main article {
+    margin-left: 2.5%;
+    width: 30%;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "imagen"
+    "datos";
+}
