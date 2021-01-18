@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    color: white;
+    font-size: 20px;
+    grid-template-areas: 
+        "Cabecera"
+        "MenuP"
+        "Main"
+        "Aside"
+        "Footer"
+}
+
+#container header {
+    background-color: black;
+    grid-area: Cabecera;
+}
+#container nav {
+    background-color: blue;
+    grid-area: MenuP;
+}
+#container main {
+    background-color: red;
+    grid-area: Main;
+}
+#container aside {
+    background-color: yellow;
+    grid-area: Aside;
+}
+#container footer {
+    background-color: green;
+    grid-area: Footer;
+}

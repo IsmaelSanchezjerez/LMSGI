@@ -1,0 +1,12 @@
+#container {
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+        "Cabecera Cabecera Cabecera"
+        "MenuP Main Aside"
+        "Footer Footer Aside"
+}
+
+#container aside {
+    display: block;
+}

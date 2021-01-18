@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#contactos{
+    display: none;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: .5fr 1fr;
+    grid-template-areas: 
+    "Cabecera"
+    "Cuerpo";
+}
+
+#container > header  {
+    grid-area: Cabecera;
+    display: grid;
+    grid-template-columns:.7fr 1fr .2fr;
+    grid-row: 1fr 1fr 1fr;
+    width: 100%;
+    grid-template-areas: 
+    "navSociales navSociales navSociales"
+    "logo titulo navicon"
+    "mprincipal mprincipal mprincipal";
+}
+
+
+#sociales{
+    grid-area: navSociales;
+    font-size: 25px;
+    padding-right: 10px;
+    height: 100%;
+    justify-self: end;
+}
+#sociales a{
+    margin-top: 20px;
+    color: #111;
+}
+
+#logo{
+    grid-area: logo;
+    background-color: black;
+    height: 100%;
+}
+
+h1{
+    grid-area: titulo;
+    color: #fff;
+    background: black;
+    height: 100%;
+    font-size: 26px;
+}
+
+#navicon{
+    grid-area: navicon;
+    font-size: 30px;
+    background: black;
+    height: 100%;
+}
+#principal{
+    grid-area: mprincipal;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,fr);
+    padding-left: 10px;
+    text-align: center;
+    background-color: black;
+}
+
+#principal a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+#container main {
+    background-color: orange;
+    grid-area: Cuerpo;
+}
