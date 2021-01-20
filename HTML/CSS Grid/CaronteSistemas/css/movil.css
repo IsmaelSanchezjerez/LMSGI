@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#contactos{
+    display: none;
+    grid-area: contactos;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: .5fr 1fr;
+    grid-template-areas: 
+    "Cabecera"
+    "Cuerpo";
+}
+
+#container > header  {
+    grid-area: Cabecera;
+    display: grid;
+    grid-template-columns:.5fr 1fr .2fr;
+    grid-row: 1fr 2fr 2fr;
+    width: 100%;
+    grid-template-areas: 
+    "navSociales navSociales navSociales"
+    "logo titulo navicon"
+    "mprincipal mprincipal mprincipal";
+}
+
+
+#sociales{
+    grid-area: navSociales;
+    font-size: 25px;
+    padding-right: 10px;
+    justify-self: end;
+    padding-top: 10px;
+}
+#sociales a{
+    margin-top: 20px;
+    color: #111;
+    border: 2px solid black;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#logo{
+    grid-area: logo;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1{
+    grid-area: titulo;
+    color: #fff;
+    background: black;
+    height: 100%;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+#navicon{
+    grid-area: navicon;
+    font-size: 30px;
+    background: black;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#navicon i{
+    color: white;
+}
+#principal{
+    grid-area: mprincipal;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,fr);
+    padding-left: 10px;
+    background-color: black;
+    padding: 5px;
+}
+
+#principal a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#principal i{
+    display: none;
+}
+
+#container main {
+    background-color: orange;
+    grid-area: Cuerpo;
+    
+}
+
+#container main section{
+    background-color: white;
+    padding: 5px;
+}
+
+#container main > header {
+    padding: 5px;
+}
+
+#container main header h2{
+    color: #fff;
+}
+
+#container main article {
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    width: 100%;
+    grid-template-columns:.5fr 10fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "imagen datos";
+}
+
+#container main article h2{
+    color: blue;
+}
+
+#container main article p{
+    font-size: 14px;
+}
+
+#container main article img{
+    grid-area: imagen;
+    align-self: center;
+}
+
+.datos{
+    grid-area: datos;
+    padding-left: 10px;
+}
