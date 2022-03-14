@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LibrosService } from 'src/app/services/libros.service';
+import { ICategoria, ILibro } from '../../interfaces/Libros';
 
 @Component({
   selector: 'app-categorias',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categorias.component.scss']
 })
 export class CategoriasComponent implements OnInit {
+  categorias: ICategoria[] | null  = null;
 
-  constructor() { }
+  constructor(private librosService: LibrosService) { }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+    this.categorias = await this.librosService.getCategorias();
+    console.log(this.categorias)
   }
 
 }

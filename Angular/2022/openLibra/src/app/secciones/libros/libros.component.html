@@ -1,1 +1,33 @@
-<p>libros works!</p>
+
+<section id="libros">
+  <div class="men">
+    <h3>Categorias</h3>
+    <nav>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let categoria of categorias" (click)="getLibros(categoria.category_id)">
+          {{categoria.name}}/{{categoria.category_id}}
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="cuerpo container">
+      <div class="row bg-dark text-white">
+        <div class="col-2">Img</div>
+        <div class="col-1">Id</div>
+        <div class="col-5">Titulo</div>
+        <div class="col-2">Autor</div>
+        <div class="col-1">Año</div>
+        <div class="col-1">Paginas</div>
+      </div>
+      <div class="row" *ngFor="let libro of libros">
+        <div class="col-2"><img [src] = "libro.cover"></div>
+        <div class="col-1">{{ libro.ID }}</div>
+        <div class="col-5">{{ libro.title }}</div>
+        <div class="col-2" [innerHTML]="libro.author"></div>
+        <div class="col-1" [innerHTML]="libro.publisher_date"></div>
+        <div class="col-1" [innerHTML]="libro.pages"></div>
+
+      </div>
+  </div>
+
+</section>
