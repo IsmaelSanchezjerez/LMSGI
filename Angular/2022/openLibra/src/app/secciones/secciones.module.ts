@@ -10,7 +10,7 @@ import { LibrosComponent } from './libros/libros.component';
   declarations: [
     AutoresComponent,
     CategoriasComponent,
-    LibrosComponent
+    LibrosComponent,
   ],
   imports: [
     CommonModule,
