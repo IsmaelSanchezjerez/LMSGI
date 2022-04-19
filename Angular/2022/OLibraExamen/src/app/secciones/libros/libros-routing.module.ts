@@ -5,9 +5,9 @@ import { LibrosShowComponent } from './libros-show/libros-show.component';
 import { LibrosNavComponent } from './libros-nav/libros-nav.component';
 
 const routes: Routes = [
-  { path: 'new', component: LibrosCreateComponent},
-  { path: 'show', component: LibrosShowComponent},
-  { path: 'sidevar', component: LibrosNavComponent }
+  { path: 'new', component: LibrosCreateComponent, outlet: 'cuerpo'},
+  { path: 'show', component: LibrosShowComponent, outlet: 'cuerpo'},
+  { path: 'sidevar', component: LibrosNavComponent, outlet:'menu' }
 ];
 
 @NgModule({

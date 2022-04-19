@@ -9,6 +9,7 @@ import { LibrosShowComponent } from './libros-show/libros-show.component';
 
 @NgModule({
   declarations: [
+    LibrosComponent,
     LibrosNavComponent,
     LibrosCreateComponent,
     LibrosShowComponent
@@ -16,7 +17,6 @@ import { LibrosShowComponent } from './libros-show/libros-show.component';
   imports: [
     CommonModule,
     LibrosRoutingModule,
-    LibrosComponent
   ]
 })
 export class LibrosModule { }
