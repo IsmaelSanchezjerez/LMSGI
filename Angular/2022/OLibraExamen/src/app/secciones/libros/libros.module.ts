@@ -5,6 +5,7 @@ import { LibrosComponent } from './libros.component';
 import { LibrosNavComponent } from './libros-nav/libros-nav.component';
 import { LibrosCreateComponent } from './libros-create/libros-create.component';
 import { LibrosShowComponent } from './libros-show/libros-show.component';
+import { LibrosListComponent } from './libros-list/libros-list.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { LibrosShowComponent } from './libros-show/libros-show.component';
     LibrosComponent,
     LibrosNavComponent,
     LibrosCreateComponent,
-    LibrosShowComponent
+    LibrosShowComponent,
+    LibrosListComponent
   ],
   imports: [
     CommonModule,

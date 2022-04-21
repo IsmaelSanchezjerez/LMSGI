@@ -1,1 +1,20 @@
 <p>libros-nav works!</p>
+
+<nav>
+  <li class="list-group-item" >
+    <a class="nav-link"
+        [routerLink]="['/libros', {outlets: {cuerpo: ['new'] }}]">
+      <i class="fa-solid fa-plus"></i> Insertar Libro
+    </a>
+  </li>
+  <ul *ngIf="categorias" class="list-group">
+    <li *ngFor="let categoria of categorias" class="list-group-item"  >
+      <a class="nav-link"
+        [routerLink]="['/libros', {outlets: {cuerpo: ['list', categoria.name ] }}]">
+        {{ categoria.name }}
+      </a>
+    </li>
+  </ul>
+
+
+</nav>
