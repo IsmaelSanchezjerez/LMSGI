@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'new', component: LibrosCreateComponent, outlet: 'cuerpo'},
   { path: 'show', component: LibrosShowComponent, outlet: 'cuerpo'},
   { path: 'sidevar', component: LibrosNavComponent, outlet:'menu' },
-  { path: 'list/:id', component: LibrosListComponent, outlet: 'cuerpo'},
+  { path: 'list/:codCat/:nombre', component: LibrosListComponent, outlet: 'cuerpo'},
 
 ];
 

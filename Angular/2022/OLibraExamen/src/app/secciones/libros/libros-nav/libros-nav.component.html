@@ -10,7 +10,7 @@
   <ul *ngIf="categorias" class="list-group">
     <li *ngFor="let categoria of categorias" class="list-group-item"  >
       <a class="nav-link"
-        [routerLink]="['/libros', {outlets: {cuerpo: ['list', categoria.name ] }}]">
+        [routerLink]="['/libros', {outlets: {cuerpo: ['list', categoria.category_id, categoria.name] }}]">
         {{ categoria.name }}
       </a>
     </li>
