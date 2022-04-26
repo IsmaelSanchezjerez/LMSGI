@@ -1,0 +1,19 @@
+
+div.col {
+  border: 1px solid red
+}
+
+div.row {
+  margin-top:5px
+}
+
+div.card{
+  background-color: rgba(0,0,0,.2);
+}
+div.card h5 {
+  color: red
+}
+
+div.card img {
+  height: 50% !important;
+}
