@@ -7,14 +7,35 @@
       <i class="fa-solid fa-plus"></i> Insertar Libro
     </a>
   </li>
-  <ul *ngIf="categorias" class="list-group">
-    <li *ngFor="let categoria of categorias" class="list-group-item"  >
-      <a class="nav-link"
-        [routerLink]="['/libros', {outlets: {cuerpo: ['list', categoria.category_id, categoria.name] }}]">
-        {{ categoria.name }}
-      </a>
-    </li>
-  </ul>
+  <li class="list-group">
+    <button class="btn btn-primary" type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+      Categorias
+    </button>
+    <button class="btn btn-primary" type="button"
+            data-bs-toggle="listaAutores" data-bs-target="#listaAutores"
+            aria-expanded="false" aria-controls="listaAutores">
+      Autores
+    </button>
+    <div class="collapse" id="collapseExample">
+      <ul *ngIf="categorias">
+        <li *ngFor="let categoria of categorias" class="list-group-item"  >
+          <a class="nav-link"
+            [routerLink]="['/libros', {outlets: {cuerpo: ['list', categoria.category_id, categoria.name] }}]">
+            {{ categoria.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="listaAutores" id="listaAutores">
+      <ul *ngIf="categorias">
+        <li *ngFor="let autor of autores" class="list-group-item"  >
+          <a class="nav-link"> {{ autor }}</a>
+        </li>
+      </ul>
+    </div>
+  </li>
 
 
 </nav>
