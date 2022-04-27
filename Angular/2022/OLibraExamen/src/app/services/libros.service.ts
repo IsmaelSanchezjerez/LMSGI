@@ -54,6 +54,21 @@ export class LibrosService {
     })
 
   }
+
+  getLibrosAutor(nameAutor: string): Promise<ILibro[]> {
+    const url = `${this.api}`;
+    const params =new HttpParams()
+      .set ('book_author', nameAutor);
+
+    this.httpOptions.params = params;
+    return new Promise(resolve => {
+      this.http.get<ILibro[]>(url, this.httpOptions)
+      .subscribe (data => { 
+        console.log(data);
+        resolve(data)
+      })
+    })
+  }
   getLibrosCatgoria(idCat: number): Promise<ILibro[]>{
     // headers y parámetros de la REQUEST
     const url = `${this.api}`;

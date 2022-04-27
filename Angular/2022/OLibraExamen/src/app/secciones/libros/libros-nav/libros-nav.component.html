@@ -9,16 +9,16 @@
   </li>
   <li class="list-group">
     <button class="btn btn-primary" type="button"
-            data-bs-toggle="collapse" data-bs-target="#collapseExample"
+            data-bs-toggle="collapse" data-bs-target="#listaCategorias"
             aria-expanded="false" aria-controls="collapseExample">
       Categorias
     </button>
     <button class="btn btn-primary" type="button"
-            data-bs-toggle="listaAutores" data-bs-target="#listaAutores"
+            data-bs-toggle="collapse" data-bs-target="#listaAutores"
             aria-expanded="false" aria-controls="listaAutores">
       Autores
     </button>
-    <div class="collapse" id="collapseExample">
+    <div class="collapse multi-collapse" id="listaCategorias">
       <ul *ngIf="categorias">
         <li *ngFor="let categoria of categorias" class="list-group-item"  >
           <a class="nav-link"
@@ -28,7 +28,7 @@
         </li>
       </ul>
     </div>
-    <div class="listaAutores" id="listaAutores">
+    <div class="ollapse multi-collapse" id="listaAutores">
       <ul *ngIf="categorias">
         <li *ngFor="let autor of autores" class="list-group-item"  >
           <a class="nav-link"> {{ autor }}</a>
